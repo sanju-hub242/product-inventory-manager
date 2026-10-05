@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Inventory Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Product Inventory Manager</h1>
+
+        <p class="subtitle">
+            Manage products and check their availability
+        </p>
+
+        <div class="form-container">
+
+            <input type="text" id="productName" placeholder="Product Name">
+
+            <input type="number" id="productPrice" placeholder="Price">
+
+            <label>
+                <input type="checkbox" id="productStock">
+                In Stock
+            </label>
+
+            <input type="text" id="productTags" placeholder="Tags (comma separated)">
+
+            <button onclick="addProduct()">
+                Add Product
+            </button>
+
+        </div>
+
+        <h2>Product List</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Tags</th>
+                </tr>
+            </thead>
+
+            <tbody id="productTableBody">
+            </tbody>
+
+        </table>
+
+        <h2>Available Products</h2>
+
+        <div id="availableProducts">
+        </div>
+
+    </div>
+
+    <script src="dist/inventory.js"></script>
+
+</body>
+
+</html>
